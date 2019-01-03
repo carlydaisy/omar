@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+
 client.on('message', message => {
-    var prefix = "b";
+    var prefix = "B";
    
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -9,7 +10,7 @@ client.on('message', message => {
         let args = message.content.split(' ').slice(1).join(' ');
     if(message.content.split(' ')[0] == prefix + 'c') {
         if (!args[1]) {
-    message.channel.send("bc <message>");
+    message.channel.send("Bc <message>");
     return;
     }
             message.guild.members.forEach(m => {
@@ -35,7 +36,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : DREAM ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`crossfire`,"http://twitch.tv/YouTube")
+client.user.setGame(`Crossfire`,"http://twitch.tv/YouTube")
 client.user.setStatus("dnd")
 });
 
